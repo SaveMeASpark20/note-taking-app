@@ -41,4 +41,4 @@ app.put("/notes/:id", requireAuth, noteController.updateNote)
 app.delete("/notes/:id", requireAuth, noteController.deleteNote)
 
 //start our server
-app.listen(process.env.PORT)
+app.listen(process.env.PORT || 3001)
