@@ -1,7 +1,6 @@
 //Load env variables
-if(process.env.NODE_ENV != "production") {
-    require("dotenv").config();
-}
+require("dotenv").config();
+
 
 //Import dependencies
 const express = require("express")
@@ -24,7 +23,7 @@ app.use(cors({
     credentials: true
     }
 ));
-
+ 
 //Connect to database
 connectToDb()
 
