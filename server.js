@@ -20,8 +20,8 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: true,
-    credentials: true
+    origin: "https://splendorous-clafoutis-7489f5.netlify.app",
+    credentials: true,
     }
 ));
  
