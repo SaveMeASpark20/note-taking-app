@@ -19,7 +19,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: ["https://splendorous-clafoutis-7489f5.netlify.app", "https://mern-note-taking-app.onrender.com"],
+    origin: "https://mern-note-taking-app.onrender.com",
     credentials: true,
     }
 ));
