@@ -12,7 +12,6 @@ const noteController = require("./controller/notesController");
 const usersController = require("./controller/usersController");
 const requireAuth = require("./middleware/requireAuth")
 
-
 //Create an express app
 const app = express();
 
@@ -20,7 +19,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://splendorous-clafoutis-7489f5.netlify.app",
+    origin: ["https://splendorous-clafoutis-7489f5.netlify.app", "https://mern-note-taking-app.onrender.com/"],
     credentials: true,
     }
 ));
