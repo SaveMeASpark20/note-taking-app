@@ -45,9 +45,9 @@ async function login(req, res) {
     //Set the Cookie
     res.cookie("Authorization", token, {
         expires: new Date(expiration),
-        // httpOnly: true,                                              
-        sameSite: "lax",
-        // secure: process.env.NODE_ENV === "production"
+        httpOnly: true,                                              
+        sameSite: 'None',
+        secure: process.env.NODE_ENV === "production"
     })
     
 
